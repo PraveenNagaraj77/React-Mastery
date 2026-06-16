@@ -1,0 +1,58 @@
+What is React?
+
+React is an open-source JavaScript library developed by Facebook for building reusable and efficient user interfaces. It follows a component-based architecture and uses a Virtual DOM to optimize UI updates and improve performance.
+
+What is the difference between SPA and MPA?
+
+A Multi Page Application reloads the entire page whenever the user navigates to another page. A Single Page Application loads the application once and dynamically updates only the required parts of the UI without reloading the entire page. React applications are generally SPAs, which provide a faster and smoother user experience.
+
+What is Virtual DOM?
+
+Virtual DOM is a lightweight JavaScript representation of the real DOM. Whenever state or props change, React creates a new Virtual DOM tree and compares it with the previous one using a diffing algorithm. React then updates only the changed elements in the real DOM through a process called reconciliation, improving performance and reducing unnecessary DOM operations.
+
+
+Is Virtual DOM Faster Than Real DOM?
+
+No. Virtual DOM itself is not faster than the real DOM. The benefit comes from minimizing expensive real DOM updates. React performs calculations in memory using the Virtual DOM and updates only the necessary parts of the real DOM.
+
+
+What is JSX?
+
+JSX stands for JavaScript XML. It is a syntax extension for JavaScript that allows developers to write HTML-like code inside JavaScript. JSX improves readability and developer experience. Browsers cannot understand JSX directly, so it is converted into JavaScript using Babel.
+
+What is a Component?
+
+A component is an independent and reusable piece of UI in React. Components help divide the application into smaller manageable units, improving code reusability, maintainability, and scalability.
+
+Why are Components Important?
+
+Components allow developers to build complex user interfaces by composing smaller reusable pieces. This reduces code duplication and makes applications easier to maintain.
+
+What are Props?
+
+Props are read-only inputs passed from a parent component to a child component. They are used to transfer data and make components reusable and dynamic.
+
+Can a Child Modify Props?
+
+No. Props are immutable. A child component can read props but cannot modify them. Data flow in React is unidirectional from parent to child.
+
+Why are Props Important?
+
+Props help create reusable and configurable components by allowing dynamic data to be passed from parent components to child components.
+
+What is a State?
+
+State is data managed by React that can change over time.State is a built-in React mechanism used to store and manage dynamic data within a component. Whenever state changes, React re-renders the component and updates the UI accordingly.
+
+What is useState?
+
+useState is a React Hook that allows functional components to manage state. It returns the current state value and a setter function used to update that state.
+
+
+Difference Between State and Props?
+
+Props are read-only values passed from parent to child components, whereas state is managed within a component and can change over time using setter functions.
+
+Why are you using prev => prev + 1 instead of cart + 1?
+
+Because the new state depends on the previous state. Using a functional update ensures React always uses the latest state value, especially when updates are batched.
