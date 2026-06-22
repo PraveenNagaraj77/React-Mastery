@@ -56,3 +56,36 @@ Props are read-only values passed from parent to child components, whereas state
 Why are you using prev => prev + 1 instead of cart + 1?
 
 Because the new state depends on the previous state. Using a functional update ensures React always uses the latest state value, especially when updates are batched.
+
+What is Event Handling in React?
+
+Event handling in React is the mechanism used to respond to user interactions such as clicks, input changes, and form submissions. React uses synthetic events and camelCase event names like onClick and onChange.
+
+Why do we use preventDefault()?
+
+preventDefault() prevents the browser's default behavior. In React forms, it is commonly used to stop page refreshes during form submission.
+
+What is a Controlled Component?
+
+A controlled component is a form element whose value is managed by React state. The displayed value is controlled through the value prop, and updates are handled using event handlers such as onChange.
+
+Why Use Controlled Components?
+
+Controlled components provide better control over form data, make validation easier, and ensure React remains the single source of truth for UI state.
+
+Why do we use value={state} in form inputs?
+
+Using the value prop makes the input a controlled component. React state becomes the single source of truth, allowing easier validation, form handling, and UI updates.\
+
+
+What is Form Validation?
+
+Form validation is the process of verifying user input before form submission to ensure that data meets predefined rules such as required fields, valid email format, or password length.
+
+What is useRef?
+
+useRef is a React Hook that provides a mutable reference object. It is commonly used to access DOM elements directly and store values that persist across renders without causing re-renders.
+
+Difference Between useRef and useState?
+
+useState triggers component re-renders when updated, whereas updating a useRef value does not trigger a re-render. useState is used for UI data, while useRef is used for DOM references and mutable values.

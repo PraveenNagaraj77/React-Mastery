@@ -1,8 +1,17 @@
 import "./App.css";
+import FeedbackForm from "./forms/controlledcomponents/FeedbackForm";
+import FormSubmission from "./forms/controlledcomponents/FormSubmission";
+import NameInput from "./forms/controlledcomponents/NameInput";
+import LoginValidation from "./forms/formvalidation/LoginValidation";
+import NameValidation from "./forms/formvalidation/NameValidation";
 import Footer from "./fundamentals/components/Footer";
 import Header from "./fundamentals/components/Header";
 import Profile from "./fundamentals/components/Profile";
 import Welcome from "./fundamentals/components/Welcome";
+import ClickDemo from "./fundamentals/eventhandling/ClickDemo";
+import Counter2 from "./fundamentals/eventhandling/Counter";
+import FormDemo from "./fundamentals/eventhandling/FormDemo";
+import InputDemo from "./fundamentals/eventhandling/InputDemo";
 import Introduction from "./fundamentals/introduction/Introduction";
 import VirtualDomDemo from "./fundamentals/introduction/VirtualDomDemo";
 import Employee from "./fundamentals/props/Employee";
@@ -15,6 +24,8 @@ import LoginStatus from "./fundamentals/usestate/LoginStatus";
 import PasswordToggle from "./fundamentals/usestate/PasswordToggle";
 import TextChange from "./fundamentals/usestate/TextChange";
 import Toggle from "./fundamentals/usestate/Toggle";
+import FocusInput from "./hooks/useref/FocusInput";
+import RenderCounter from "./hooks/useref/RenderCounter";
 
 function App() {
   return (
@@ -41,12 +52,28 @@ function App() {
       /> */}
       {/* <Counter/>
       <Toggle/> */}
-      <PasswordToggle/>
+      {/* <PasswordToggle/>
       <LikeButton/>
       <CartCount/>
       <LoginStatus/>
       <TextChange/>
-      <Footer />
+      <Footer /> */}
+
+      {/* <Counter2/> */}
+      {/* <ClickDemo />
+      <InputDemo/>
+      <FormDemo/> */}
+
+      {/* <NameInput/>
+      <FormSubmission/>
+      <FeedbackForm/> */}
+      {/* <FocusInput/>
+      <RenderCounter/> */}
+      {/* <NameValidation/>
+       */}
+
+       <LoginValidation/>
+      <Footer/>
     </div>
   );
 }
