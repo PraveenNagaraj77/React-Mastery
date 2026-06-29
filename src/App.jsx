@@ -4,6 +4,8 @@ import FormSubmission from "./forms/controlledcomponents/FormSubmission";
 import NameInput from "./forms/controlledcomponents/NameInput";
 import LoginValidation from "./forms/formvalidation/LoginValidation";
 import NameValidation from "./forms/formvalidation/NameValidation";
+import LoginFormPage from "./forms/reacthookform/LoginFormPage";
+import RegistrationForm from "./forms/reacthookform/RegistrationForm";
 import Footer from "./fundamentals/components/Footer";
 import Header from "./fundamentals/components/Header";
 import Profile from "./fundamentals/components/Profile";
@@ -24,6 +26,27 @@ import LoginStatus from "./fundamentals/usestate/LoginStatus";
 import PasswordToggle from "./fundamentals/usestate/PasswordToggle";
 import TextChange from "./fundamentals/usestate/TextChange";
 import Toggle from "./fundamentals/usestate/Toggle";
+import ArrayDependency from "./hooks/useeffect/ArrayDependency";
+import AutoCounter from "./hooks/useeffect/AutoCounter";
+import CleanupDemo from "./hooks/useeffect/CleanupDemo";
+import CountEffect from "./hooks/useeffect/CountEffect";
+import CounterLogger from "./hooks/useeffect/CounterLogger";
+import EmptyDependencyArray from "./hooks/useeffect/EmptyDependencyArray";
+import EveryRender from "./hooks/useeffect/EveryRender";
+import FetchPosts from "./hooks/useeffect/FetchPosts";
+import FetchUsers from "./hooks/useeffect/FetchUsers";
+import FetchUsersWithLoading from "./hooks/useeffect/FetchUsersWithLoading";
+import MultipleDependencies from "./hooks/useeffect/MultipleDependencies";
+import MultipleEffects from "./hooks/useeffect/MultipleEffects";
+import NoDependency from "./hooks/useeffect/NoDependency";
+import ObjectArrayDependency from "./hooks/useeffect/ObjectArrayDependency";
+import RenderLogger from "./hooks/useeffect/RenderLogger";
+import RunOnce from "./hooks/useeffect/RunOnce";
+import TimerDemo from "./hooks/useeffect/TimerDemo";
+import TitleUpdater from "./hooks/useeffect/TitleUpdater";
+import UserDashboard from "./hooks/useeffect/UserDashboard";
+import WelcomeMessage from "./hooks/useeffect/WelcomeMessage";
+import WindowWidth from "./hooks/useeffect/WindowWidth";
 import FocusInput from "./hooks/useref/FocusInput";
 import RenderCounter from "./hooks/useref/RenderCounter";
 
@@ -72,8 +95,35 @@ function App() {
       {/* <NameValidation/>
        */}
 
-       <LoginValidation/>
-      <Footer/>
+      {/* <LoginValidation/> */}
+
+      {/* <LoginFormPage/> */}
+
+      {/* <RegistrationForm/> */}
+      {/* <RunOnce/>
+      <EveryRender/>
+      <CountEffect/> */}
+
+      {/* <TitleUpdater/> */}
+      {/* <WelcomeMessage/>
+      <CounterLogger/> */}
+      {/* <CleanupDemo/>
+      <TimerDemo/> */}
+      {/* <AutoCounter/> */}
+
+      {/* <WindowWidth/> */}
+      {/* <FetchUsers/> */}
+      {/* <FetchPosts/> */}
+      {/* <FetchUsersWithLoading/> */}
+      {/* <MultipleEffects/> */}
+      {/* <UserDashboard/> */}
+      {/* <NoDependency/> */}
+      {/* <RenderLogger/> */}
+      {/* <EmptyDependencyArray/> */}
+      {/* <MultipleDependencies/> */}
+      {/* <ObjectArrayDependency/> */}
+      <ArrayDependency/>
+      <Footer />
     </div>
   );
 }

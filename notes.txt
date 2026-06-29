@@ -89,3 +89,100 @@ useRef is a React Hook that provides a mutable reference object. It is commonly 
 Difference Between useRef and useState?
 
 useState triggers component re-renders when updated, whereas updating a useRef value does not trigger a re-render. useState is used for UI data, while useRef is used for DOM references and mutable values.
+
+What is React Hook Form?
+
+React Hook Form is a lightweight library for managing forms in React. It provides built-in validation, better performance by minimizing re-renders, and simpler code compared to managing forms manually with useState.
+
+
+What does register() do?
+
+register() connects an input field to React Hook Form so it can track its value, apply validation rules, and include it in the submitted form data.
+
+What is handleSubmit()?
+
+handleSubmit() validates the form first. If validation succeeds, it calls the provided callback with the form data.
+
+What is errors?
+
+errors is an object containing validation errors for each registered field. It is used to display user-friendly validation messages.
+
+What is useEffect?
+
+useEffect is a React Hook that lets you perform side effects in a component. A side effect is anything that happens outside of rendering the UI.
+
+What is useEffect?
+
+
+useEffect is a React Hook used to perform side effects in functional components. It runs after the component renders and can be configured to run once, on every render, or only when specified dependencies change.
+
+Examples:
+
+Fetching data from an API
+Setting up timers
+Updating the document title
+Adding event listeners
+Accessing local storage
+
+What is the dependency array?
+
+
+The dependency array controls when a useEffect runs. An empty array ([]) runs the effect only once, no array runs it after every render, and listing dependencies runs it whenever those values change.
+
+
+What is a Cleanup Function?
+
+A cleanup function is a function returned from useEffect. React executes it before the effect runs again due to dependency changes and when the component unmounts. It is commonly used to clear timers, remove event listeners, and cancel subscriptions.
+
+
+Why is Cleanup Important?
+
+Cleanup prevents memory leaks and unwanted side effects by releasing resources such as timers, event listeners, and subscriptions when they are no longer needed.
+
+
+Why do we remove event listeners in useEffect?
+
+We remove event listeners in the cleanup function to prevent memory leaks and duplicate event handlers when the component unmounts or the effect is re-executed.
+
+Why should we avoid anonymous functions with addEventListener?
+
+removeEventListener requires the exact same function reference that was passed to addEventListener. Anonymous functions create a new reference each time, making them impossible to remove correctly.
+
+
+Why are API calls usually placed inside useEffect?
+
+API calls are side effects. Placing them inside useEffect ensures they run after the component renders and can be controlled using the dependency array to avoid unnecessary or repeated requests.
+
+Why use an empty dependency array for fetching data?
+
+An empty dependency array ([]) makes the effect run only once after the initial render, preventing repeated API calls on every re-render.
+
+What is the purpose of loading state?
+
+It lets the UI show a loading indicator while waiting for asynchronous operations like API requests to complete.
+
+Why use try...catch...finally?
+
+try → executes the API call
+catch → handles any errors
+finally → runs regardless of success or failure, making it ideal for stopping loading indicators.
+
+Why check response.ok?
+
+fetch() only rejects on network errors. HTTP errors like 404 or 500 do not automatically throw an exception, so checking response.ok ensures those responses are handled properly.
+
+Can a component have multiple useEffects?
+
+Yes. A React component can have multiple useEffect hooks. Each one should ideally handle a single side effect, improving readability, separation of concerns, and maintainability.
+
+In what order are multiple useEffects executed?
+
+They execute in the order they are declared in the component, after React has rendered the UI.
+
+Why split logic into multiple useEffects?
+
+To separate unrelated side effects. This makes the component easier to understand, maintain, and debug.
+
+What is a stale closure in React?
+
+A stale closure occurs when a function inside a useEffect or asynchronous callback captures an old state or prop value from the render in which it was created, causing it to use outdated data even after the component re-renders.
