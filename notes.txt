@@ -230,3 +230,7 @@ useCallback memoizes a function so that React returns the same function referenc
 Why do we use useCallback?
 
 "useCallback is a React Hook that memoizes a function. It returns the same function instance across renders unless its dependencies change. It is commonly used with React.memo to prevent unnecessary re-rendering of child components when functions are passed as props."
+
+What is a Custom Hook?
+
+A Custom Hook is a JavaScript function whose name starts with use and that uses one or more React Hooks to encapsulate and reuse stateful logic across multiple components.

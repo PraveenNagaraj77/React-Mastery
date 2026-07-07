@@ -8,7 +8,7 @@ import LoginFormPage from "./forms/reacthookform/LoginFormPage";
 import RegistrationForm from "./forms/reacthookform/RegistrationForm";
 import Footer from "./fundamentals/components/Footer";
 import Header from "./fundamentals/components/Header";
-import Profile from "./fundamentals/components/Profile";
+// import Profile from "./fundamentals/components/Profile";
 import Welcome from "./fundamentals/components/Welcome";
 import ClickDemo from "./fundamentals/eventhandling/ClickDemo";
 import Counter2 from "./fundamentals/eventhandling/Counter";
@@ -26,6 +26,12 @@ import LoginStatus from "./fundamentals/usestate/LoginStatus";
 import PasswordToggle from "./fundamentals/usestate/PasswordToggle";
 import TextChange from "./fundamentals/usestate/TextChange";
 import Toggle from "./fundamentals/usestate/Toggle";
+import Dashboard from "./hooks/customhooks/Dashboard";
+import Posts from "./hooks/customhooks/Posts";
+import Profile from "./hooks/customhooks/Profile";
+import Theme from "./hooks/customhooks/Theme";
+import ThemeToggle from "./hooks/customhooks/ThemeToggle";
+import Users from "./hooks/customhooks/Users";
 import CallbackCounter from "./hooks/usecallback/CallbackCounter ";
 import Parent from "./hooks/usecallback/Parent";
 import TodoApp from "./hooks/usecallback/TodoApp";
@@ -155,8 +161,15 @@ function App() {
       {/* <FullName/> */}
       {/* <StudentProfile/> */}
       {/* <EmployeeSearch/> */}
-      {/* <CallbackCounter/> */}
-      <TodoApp/>
+      {/* <CallbackCounter/>
+      <TodoApp/> */}
+      {/* <Dashboard/>
+      <br />
+      <Profile/> */}
+      {/* <Users/>
+      <Posts/> */}
+      {/* <ThemeToggle/> */}
+      <Theme/>
       <Footer />
     </div>
   );
