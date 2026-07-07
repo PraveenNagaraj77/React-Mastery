@@ -26,6 +26,9 @@ import LoginStatus from "./fundamentals/usestate/LoginStatus";
 import PasswordToggle from "./fundamentals/usestate/PasswordToggle";
 import TextChange from "./fundamentals/usestate/TextChange";
 import Toggle from "./fundamentals/usestate/Toggle";
+import CallbackCounter from "./hooks/usecallback/CallbackCounter ";
+import Parent from "./hooks/usecallback/Parent";
+import TodoApp from "./hooks/usecallback/TodoApp";
 import ArrayDependency from "./hooks/useeffect/ArrayDependency";
 import AutoCounter from "./hooks/useeffect/AutoCounter";
 import CleanupDemo from "./hooks/useeffect/CleanupDemo";
@@ -47,8 +50,23 @@ import TitleUpdater from "./hooks/useeffect/TitleUpdater";
 import UserDashboard from "./hooks/useeffect/UserDashboard";
 import WelcomeMessage from "./hooks/useeffect/WelcomeMessage";
 import WindowWidth from "./hooks/useeffect/WindowWidth";
+import DependencyArray from "./hooks/usememo/DependencyArray";
+import EmployeeSearch from "./hooks/usememo/EmployeeSearch";
+import FilterProducts from "./hooks/usememo/FilterProducts";
+import FullName from "./hooks/usememo/FullName";
+import StudentProfile from "./hooks/usememo/StudentProfile";
+import UsememoIntro from "./hooks/usememo/UsememoIntro";
+import AutoFocusEmail from "./hooks/useref/AutoFocusEmail";
+import ClickCounter from "./hooks/useref/ClickCounter";
+import ClickHistory from "./hooks/useref/ClickHistory";
 import FocusInput from "./hooks/useref/FocusInput";
+import Introductions from "./hooks/useref/Introductions";
+import NameInputs from "./hooks/useref/NameInputs";
+import PreviousValueTracker from "./hooks/useref/PreviousValueTracker";
 import RenderCounter from "./hooks/useref/RenderCounter";
+import Stopwatch from "./hooks/useref/Stopwatch";
+import UsersProfiles from "./hooks/useref/UsersProfiles";
+
 
 function App() {
   return (
@@ -122,7 +140,23 @@ function App() {
       {/* <EmptyDependencyArray/> */}
       {/* <MultipleDependencies/> */}
       {/* <ObjectArrayDependency/> */}
-      <ArrayDependency/>
+      {/* <ArrayDependency/> */}
+      {/* <Introductions/> */}
+      {/* <ClickCounter/> */}
+      {/* <FocusInput/> */}
+      {/* <NameInputs/>
+      <AutoFocusEmail/> */}
+      {/* <UsersProfiles/> */}
+      {/* <Stopwatch/> */}
+      {/* <PreviousValueTracker/> */}
+      {/* <UsememoIntro/> */}
+      {/* <FilterProducts/> */}
+      {/* <DependencyArray/> */}
+      {/* <FullName/> */}
+      {/* <StudentProfile/> */}
+      {/* <EmployeeSearch/> */}
+      {/* <CallbackCounter/> */}
+      <TodoApp/>
       <Footer />
     </div>
   );
