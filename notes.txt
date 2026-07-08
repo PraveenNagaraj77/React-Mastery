@@ -234,3 +234,24 @@ Why do we use useCallback?
 What is a Custom Hook?
 
 A Custom Hook is a JavaScript function whose name starts with use and that uses one or more React Hooks to encapsulate and reuse stateful logic across multiple components.
+
+
+What is Prop Drilling?
+
+Prop Drilling is the process of passing data from a parent component to a deeply nested child component through intermediate components that don't actually use the data. It can make the code harder to maintain, and Context API helps solve this problem.
+
+1. What is Context API?
+
+Context API is React's built-in mechanism for sharing data across components without manually passing props through every level of the component tree.
+
+4. What does createContext() do?
+
+It creates a Context object.
+
+5. What does Provider do?
+
+It supplies a value to the Context.
+
+6. What does useContext() do?
+
+It reads the current value from the nearest matching Provider.
