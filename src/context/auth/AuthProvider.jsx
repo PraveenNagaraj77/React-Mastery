@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import AuthContext from "./AuthContext";
+import useLocalStorage from "../../hooks/customhooks/useLocalStorage";
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useLocalStorage("user",null);
 
   function login() {
     setUser({

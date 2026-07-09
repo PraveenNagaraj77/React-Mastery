@@ -1,19 +1,10 @@
 import "./App.css";
-
-import Header from "./fundamentals/components/Header";
-import Footer from "./fundamentals/components/Footer";
-import CartApp from "./context/cart/CartApp";
-
-
+import AppRoutes from "./routing/routerdemo/AppRoutes";
 
 
 function App() {
   return (
-    <div>
-      <Header />
-      <CartApp/>
-      <Footer />
-    </div>
+    <AppRoutes/>
   );
 }
 

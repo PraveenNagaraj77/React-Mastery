@@ -1,0 +1,22 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+
+export const Users = () => {
+    const users = [
+        { id: 1, name: "Praveen" },
+        { id: 2, name: "Rahul" },
+        { id: 3, name: "Kiran" }
+    ];
+  return (
+    <div>
+        <h1>Users</h1>
+        {
+            users.map(user=>(
+                <div key={user.id}>
+                    <Link to={`/users/${user.id}`} >{user.name}</Link>
+                </div>
+            ))
+        }
+    </div>
+  )
+}

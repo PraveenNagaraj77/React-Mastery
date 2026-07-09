@@ -255,3 +255,79 @@ It supplies a value to the Context.
 6. What does useContext() do?
 
 It reads the current value from the nearest matching Provider.
+
+React Router
+
+React Router is a client-side routing library for React that enables navigation between different pages without reloading the browser. It creates a Single Page Application (SPA) experience by rendering different components based on the URL while keeping the application loaded in the browser. React Router improves performance and provides a seamless user experience.
+
+BrowserRouter
+
+BrowserRouter is the top-level router component that enables routing in a React application. It uses the HTML5 History API to manage navigation and keeps the UI synchronized with the browser URL. It wraps the entire application so that routing features are available throughout the app.
+
+Routes
+
+The Routes component acts as a container for all the route definitions. It checks the current URL and renders the first matching Route. It replaces the older Switch component from React Router v5 and ensures only one matching route is displayed.
+
+Route
+
+A Route maps a URL path to a React component. When the browser URL matches the specified path, the component provided in the element prop is rendered. Routes define the navigation structure of the application.
+
+
+Link
+
+The Link component is used for navigation between pages without refreshing the browser. Unlike the HTML <a> tag, Link performs client-side navigation, making the application faster and preserving the React state.
+
+
+NavLink
+
+NavLink is an enhanced version of Link that automatically detects the active route. It is commonly used for navigation menus because it allows active links to be styled differently.
+
+Layout Routes
+
+Layout Routes are used when multiple pages share common UI elements such as a navbar, sidebar, or footer. Instead of repeating these components on every page, they are placed inside a layout component, and child routes are rendered within it using Outlet.
+
+Outlet
+
+The Outlet component is a placeholder where nested child routes are rendered. It allows a parent component to display common UI while dynamically rendering the content of child pages.
+
+useNavigate
+
+useNavigate is a React Router hook used for programmatic navigation. Instead of navigating through user clicks on links, it allows navigation inside JavaScript functions, such as after login, logout, or successful form submission.
+
+
+Navigate
+
+The Navigate component is used to redirect users while rendering a component. It is commonly used for authentication and protected routes. Unlike useNavigate, it is a component rather than a hook.
+
+
+Route Parameters
+
+Route Parameters are dynamic values passed through the URL. They allow a single route to display different data based on the parameter value.
+
+
+
+useParams
+
+useParams is a React Router hook used to access dynamic route parameters from the URL. It returns an object containing all route parameters, making it easy to fetch or display data based on the current URL.
+
+
+Nested Routes
+
+Nested Routes allow child pages to be grouped under a parent route. They are useful for dashboards, admin panels, and applications where multiple related pages share a common layout. The parent component renders shared UI, while child routes are displayed using Outlet.
+
+
+Protected Routes
+
+Protected Routes restrict access to specific pages based on authentication or authorization. If the user is authenticated, the requested page is rendered. Otherwise, the user is redirected to the login page. Protected routes are commonly implemented using Context API or Redux together with the Navigate component.
+
+useSearchParams
+
+useSearchParams is a React Router hook used to read and update query parameters in the URL. It is commonly used for search, filtering, sorting, and pagination.
+
+404 Route
+
+A 404 Route is used to handle invalid or unknown URLs. It is typically defined using the wildcard (*) path and displays a "Page Not Found" component when no other route matches.
+
+Interview Summary (One-Liner)
+
+React Router is a client-side routing library for React that enables navigation between components without reloading the page. It provides features such as route matching, nested routing, dynamic route parameters, protected routes, query parameters, layouts, and programmatic navigation, making it easy to build scalable Single Page Applications (SPAs).
