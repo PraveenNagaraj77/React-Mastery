@@ -1,10 +1,18 @@
 import "./App.css";
-import AppRoutes from "./routing/routerdemo/AppRoutes";
-
+import ProductList from "./redux/asyncproducts/ProductList";
+import Cart from "./redux/shoppingcart/Cart";
+// import ProductList from "./redux/shoppingcart/ProductList";
+// // import AppRoutes from "./routing/routerdemo/AppRoutes";
 
 function App() {
   return (
-    <AppRoutes/>
+    <div>
+      {/* <AppRoutes /> */}
+      {/* <ProductList />
+      <hr />
+      <Cart /> */}
+      <ProductList/>
+    </div>
   );
 }
 

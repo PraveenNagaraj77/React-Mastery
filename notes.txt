@@ -331,3 +331,57 @@ A 404 Route is used to handle invalid or unknown URLs. It is typically defined u
 Interview Summary (One-Liner)
 
 React Router is a client-side routing library for React that enables navigation between components without reloading the page. It provides features such as route matching, nested routing, dynamic route parameters, protected routes, query parameters, layouts, and programmatic navigation, making it easy to build scalable Single Page Applications (SPAs).
+
+
+
+What  is Redux?
+
+Redux is a predictable state management library that stores the application's global state in a single centralized store. Components can read data from the store and update it by dispatching actions, making state management more organized, scalable, and easier to debug.
+
+When would you choose Context API over Redux Toolkit?
+
+I use Context API for simple global state like authentication, theme, or language because it's built into React and easy to set up. For applications with complex shared state, frequent updates, or multiple features such as shopping carts, products, orders, and user management, I prefer Redux Toolkit because it provides centralized state management, better scalability, predictable updates, and excellent debugging through Redux DevTools.
+
+A Redux Store is a centralized object that holds the entire application's global state. It acts as the single source of truth, allowing components to read and update shared state in a predictable manner.
+
+
+Why do we need a Store?
+
+The Store provides a centralized location to manage the application's global state. Instead of maintaining shared state in multiple components or passing props through several levels, components can directly access and update the store, making state management predictable, scalable, and easier to debug.
+
+What is slice?
+
+A Slice is a feature-specific portion of the Redux Store that contains the initial state, reducers, and automatically generated actions for that feature. It helps organize Redux logic into modular and maintainable units.
+
+What is initialState?
+
+initialState defines the default state of a slice before any actions are dispatched.
+
+What is a reducer?
+
+A reducer is a function that receives the current state and an action, then returns the updated state based on that action.
+
+Why can we mutate state in Redux Toolkit?
+
+Redux Toolkit uses the Immer library internally. It allows us to write mutating logic like state.items.push(), but it safely produces a new immutable state behind the scenes.
+
+What is an Action?
+
+An action is a plain JavaScript object that describes what happened. It contains a type property and optionally a payload that carries the data required to update the state.
+
+What is an Action Creator?
+
+An Action Creator is a function that creates and returns an action object. In Redux Toolkit, action creators are generated automatically by createSlice().
+
+What is UseDispatch?
+
+UseDispatch is a React Redux hook that returns the dispatch function, which is used to send actions to the Redux Store. Dispatching an action tells Redux that something happened and allows reducers to update the state.
+
+What is UseSelector?
+
+useSelector is a React Redux hook used to read data from the Redux Store. It subscribes the component to the selected state, and the component automatically re-renders whenever that selected state changes.
+
+
+What is createAsyncThunk?
+
+createAsyncThunk is a Redux Toolkit utility used to handle asynchronous operations such as API calls. It automatically dispatches pending, fulfilled, and rejected actions, making it easy to manage loading, success, and error states.
