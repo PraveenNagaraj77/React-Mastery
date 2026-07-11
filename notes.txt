@@ -385,3 +385,13 @@ useSelector is a React Redux hook used to read data from the Redux Store. It sub
 What is createAsyncThunk?
 
 createAsyncThunk is a Redux Toolkit utility used to handle asynchronous operations such as API calls. It automatically dispatches pending, fulfilled, and rejected actions, making it easy to manage loading, success, and error states.
+
+Lazy Loading :
+
+Lazy Loading is a performance optimization technique where components or routes are loaded only when they are needed, reducing the initial bundle size and improving application load time
+
+Route Based Lazy Loading
+
+Route-based Lazy Loading is the process of loading page components only when the corresponding route is visited. It reduces the initial bundle size and improves the application's initial loading performance.
+
+Code Splitting is the technique of breaking a large JavaScript bundle into smaller chunks so that only the required code is downloaded when needed.
